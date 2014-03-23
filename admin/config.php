@@ -1,7 +1,7 @@
 <?php
 
 $config['site_title'] = 'xiaoBlog';						//Site title
-$config['base_url'] = 'http://localhost/blog';	//Base URL
+$config['base_url'] = 'http://xiao345.github.io';	//Base URL
 $config['theme'] = 'default';							//Set the theme
 $config['site_dir'] = '../';							//Set name for Site document
 
