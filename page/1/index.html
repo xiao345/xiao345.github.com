@@ -1,0 +1,146 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>xiaoBlog</title>
+    <link rel="stylesheet" href="http://imnerd.org/lab/pmblog/src/style.css">
+    <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.9.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://imnerd.org/lab/pmblog/src/desert.css" />
+	<script type="text/javascript"  src="http://imnerd.org/lab/pmblog/src/prettify.js"></script>
+    <link rel="stylesheet" href="http://fancyapps.com/fancybox/source/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
+    <script type="text/javascript" src="http://fancyapps.com/fancybox/source/jquery.fancybox.pack.js?v=2.1.4"></script>
+</head>
+<body>
+<div id="header">
+    <h1> 
+    	<a href="http://localhost/blog">xiaoBlog</a>
+    </h1>
+    <ul id="nav">
+    	<li><a href="http://localhost/blog">首页</a></li>
+    	        <span id="s">
+		 	<input type="text" id="search" value="" />
+			<button id="sbutton">搜索</button>
+		</span>
+        <style type="text/css">
+			#s {float:right;}
+			#search {line-height:22px;padding:2px 5px;font-size:14px;font-family:"Hiragino Sans GB", "Microsoft YaHei", sans-serif;}
+			#sbutton {line-height:22px;padding:0;margin:0;}
+        </style>
+	<script type="text/javascript">
+	var s=document.getElementById('search'), b=document.getElementById('sbutton');
+	b.onclick = function() {
+		if(s.value != '') {
+			window.open("https://www.google.com.hk/#q=site:http://localhost/blog "+s.value);
+		} else {
+			alert('请输入搜索内容');
+		}
+	}	
+	</script>
+    </ul>
+</div><div id="content">
+	<div id="content_box">
+	        <div class="post">
+            <h2 class="title"><a href="http://localhost/blog/hello-world.html">Hello World!</a></h2>
+            <div class="post_body"><p>欢迎加入PMBlog家族。</p>
+
+<h2>自定义内容</h2>
+
+<p><code>config.php</code>页面支持自定义多种内容，包括：</p>
+
+<ul>
+<li>博客名</li>
+<li>博客地址</li>
+<li>博客主题</li>
+<li>文章/站点/主题/插件 存储位置</li>
+<li>默认时间格式</li>
+<li>每页文章数</li>
+<li>文章/页面 URL格式</li>
+<li>博客名</li>
+<li>博客地址</li>
+<li>博客主题</li>
+<li>文章/站点/主题/插件 存储位置</li>
+<li>默认时间格式</li>
+<li>每页文章数</li>
+<li>文章/页面 URL格式</li>
+</ul>
+
+<!--more-->
+
+<h2>书写规则</h2>
+
+<p>默认的情况是：</p>
+
+<ul>
+<li><p>文件名即文章的URL名，也是文章的ID</p></li>
+<li><p>文件创建时间为文章标题</p></li>
+<li><p>文件内容，即文章正文</p></li>
+</ul>
+
+<p>注：不推荐使用中文作为文件名</p>
+
+<h2>最简单的博客书写方法</h2>
+
+<pre><code># 我是文章标题
+
+我是文章正文...
+</code></pre>
+
+<p>同时程序支持自定义字段（一个字段为一行）：</p>
+
+<pre><code>title: 文章标题（可选，与#号定义的标题只能选其一）
+
+date: 这里写文章的发表时间（可选，默认为文本文件的创建时间）
+
+type: page (可选，只接受page/post两个参数，默认为post)
+
+status: draft (可选，接受public/draft两个参数，draft的文章不会被别人看到)
+
+tags: Tag1， Tag2 (可选，使用,分隔每个标签）
+
+category: cate1, cate2 (可选，使用, 分隔每个分类名称)
+
+template: guestbook （可选，自定义页面模板）    
+
+custom-xx: 自定义的变量（可选，xx是你定义的变量名称）
+</code></pre>
+
+<h2>尾言</h2>
+
+<p>如果你对程序有什么疑问或者建议，请电邮告诉我。最后，感谢你的使用。</p>
+
+<p>--以上--</p>
+</div>
+            <span class="date">2013-03-15 19:35:50</span>
+            <div style="clear:both;"></div>
+            <div class="tags" style="float:left;"></div>
+            <!--<div class="ds-thread-count" data-thread-key="hello-world" style="float:right;line-height:2.5em;"></div>-->
+        </div>
+	  </div>
+
+	<div class="page-navigator">
+                    </div>
+
+
+</div>
+
+<div id="footer">
+    <div class="powered_by">
+        <a target="_blank" href="http://localhost/blog">Proudly Powered By Austin</a>
+    </div>
+</div>
+<script type="text/javascript">
+$(function () {
+	$("pre").addClass("prettyprint linenums");
+	prettyPrint();
+	$.each($('a'), function(i,item){
+		if($('img', item).length >0) {
+			item.className = 'fancybox';
+		}
+	});
+	$(".fancybox").fancybox();
+})
+</script>
+</body>
+</html>
