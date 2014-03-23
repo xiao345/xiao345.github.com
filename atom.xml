@@ -4,10 +4,28 @@
   <title><![CDATA[]]></title>
   <link href="/atom.xml" rel="self"/>
   <link href="/"/>
-  <updated>2014-03-23T15:40:58+08:00</updated>
+  <updated>2014-03-23T15:59:48+08:00</updated>
   <id>/</id>
   <generator uri="http://gitcafe.com/lizheming/pmblog">PMBlog</generator>
 
+    <entry>
+    <title type="html"><![CDATA[终于明白git和成功在github上搞博客了]]></title>
+    <link href="http://xiao345.github.io/first.html"/>
+    <id>http://xiao345.github.io/first.html</id>
+    <updated>2014-03-23T15:59:42+08:00</updated>
+    <content type="html"><![CDATA[<h2>以后都不折腾了</h2>
+
+<p>以前写博客换了很多平台wordpress, typecho, ghost....但总觉得要付服务器，程序太臃肿，不喜欢。找了好久终于找到github+markdown，真是太棒了。</p>
+
+<p>不过不明白为什么那么多高级程序员喜欢用Ruby编程，真想知道Ruby好在哪，做为一个屌丝程序员觉得PHP挺好的，在国内资料比较丰富，学习成本比较低。</p>
+
+<p>自从知道可以用github来搭建博客之后一直在尝试，但看了很多文章都是用jekyll或Oc什么来的，总之就是先搭Ruby环境。后来我想，这东西不就是个自动生成静态页面的引擎嘛，PHP也应该有的，找了很久才找到PMBBlog，其实还有其它更好的，但我觉得这个够简单，方便，最重要是国人开发的，其实国人开发的东西虽不能说是最好的，但也挺好用的，最重要是文档阅读方便很多。</p>
+
+<p>有时间我也来写一个这样的引擎，要是能从书写到push能一条龙，那就更方便了。</p>
+
+<p>做为一个程序员，就是要追求极简。markdown实在太好用了。</p>
+]]></content>
+  </entry>
     <entry>
     <title type="html"><![CDATA[Hello World!]]></title>
     <link href="http://xiao345.github.io/hello-world.html"/>
