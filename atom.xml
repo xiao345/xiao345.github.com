@@ -4,14 +4,14 @@
   <title><![CDATA[]]></title>
   <link href="/atom.xml" rel="self"/>
   <link href="/"/>
-  <updated>2014-03-23T15:33:46+08:00</updated>
+  <updated>2014-03-23T15:40:58+08:00</updated>
   <id>/</id>
   <generator uri="http://gitcafe.com/lizheming/pmblog">PMBlog</generator>
 
     <entry>
     <title type="html"><![CDATA[Hello World!]]></title>
-    <link href="http://localhost/blog/hello-world.html"/>
-    <id>http://localhost/blog/hello-world.html</id>
+    <link href="http://xiao345.github.io/hello-world.html"/>
+    <id>http://xiao345.github.io/hello-world.html</id>
     <updated>2013-03-15T19:35:50+08:00</updated>
     <content type="html"><![CDATA[<p>欢迎加入PMBlog家族。</p>
 
