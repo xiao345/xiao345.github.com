@@ -42,6 +42,32 @@
 </div><div id="content">
 	<div id="content_box">
 	        <div class="post">
+            <h2 class="title"><a href="http://xiao345.github.io/jiami.html">加密技术和技术</a></h2>
+            <div class="post_body"><h2>加密技术</h2>
+
+<pre><code>1. 发送者生成对称密钥
+2. 将生成的对称密钥和公钥进行加密
+3. 将原文用对称密钥进行加密
+4. 将2、3的结果合并发送给接收者
+5. 接收者先用私钥对2中的文件进行解密得到对称密钥
+6. 再用5得到的对称密钥去解密3的文件得到原文
+</code></pre>
+
+<h2>认证技术（签名）</h2>
+
+<pre><code>1. 原文通过Hash函数进行加密成摘要
+2. 将摘要用私钥加密（签名）
+3. 将2得到的结果和原文一起发送给接收者
+4. 接收者原文通过Hash函数进行加密成摘要
+5. 将摘要用公钥加密后跟2的结果比较
+</code></pre>
+</div>
+            <span class="date">2014-03-24 23:38:06</span>
+            <div style="clear:both;"></div>
+            <div class="tags" style="float:left;"></div>
+            <!--<div class="ds-thread-count" data-thread-key="jiami" style="float:right;line-height:2.5em;"></div>-->
+        </div>
+	        <div class="post">
             <h2 class="title"><a href="http://xiao345.github.io/first.html">终于明白git和成功在github上搞博客了</a></h2>
             <div class="post_body"><h2>以后都不折腾了</h2>
 

@@ -1,0 +1,91 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>xiaoBlog</title>
+    <link rel="stylesheet" href="http://imnerd.org/lab/pmblog/src/style.css">
+    <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.9.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://imnerd.org/lab/pmblog/src/desert.css" />
+	<script type="text/javascript"  src="http://imnerd.org/lab/pmblog/src/prettify.js"></script>
+    <link rel="stylesheet" href="http://fancyapps.com/fancybox/source/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
+    <script type="text/javascript" src="http://fancyapps.com/fancybox/source/jquery.fancybox.pack.js?v=2.1.4"></script>
+</head>
+<body>
+<div id="header">
+    <h1> 
+    	<a href="http://xiao345.github.io">xiaoBlog</a>
+    </h1>
+    <ul id="nav">
+    	<li><a href="http://xiao345.github.io">首页</a></li>
+    	        <span id="s">
+		 	<input type="text" id="search" value="" />
+			<button id="sbutton">搜索</button>
+		</span>
+        <style type="text/css">
+			#s {float:right;}
+			#search {line-height:22px;padding:2px 5px;font-size:14px;font-family:"Hiragino Sans GB", "Microsoft YaHei", sans-serif;}
+			#sbutton {line-height:22px;padding:0;margin:0;}
+        </style>
+	<script type="text/javascript">
+	var s=document.getElementById('search'), b=document.getElementById('sbutton');
+	b.onclick = function() {
+		if(s.value != '') {
+			window.open("https://www.google.com.hk/#q=site:http://xiao345.github.io "+s.value);
+		} else {
+			alert('请输入搜索内容');
+		}
+	}	
+	</script>
+    </ul>
+</div><div id="content">
+    <div class="post">
+        <h2 class="title">
+        	<a href="http://xiao345.github.io/jiami.html">加密技术和技术</a>
+        </h2>
+        <div class="post_body"><h2>加密技术</h2>
+
+<pre><code>1. 发送者生成对称密钥
+2. 将生成的对称密钥和公钥进行加密
+3. 将原文用对称密钥进行加密
+4. 将2、3的结果合并发送给接收者
+5. 接收者先用私钥对2中的文件进行解密得到对称密钥
+6. 再用5得到的对称密钥去解密3的文件得到原文
+</code></pre>
+
+<h2>认证技术（签名）</h2>
+
+<pre><code>1. 原文通过Hash函数进行加密成摘要
+2. 将摘要用私钥加密（签名）
+3. 将2得到的结果和原文一起发送给接收者
+4. 接收者原文通过Hash函数进行加密成摘要
+5. 将摘要用公钥加密后跟2的结果比较
+</code></pre>
+</div>
+        <span class="date">2014-03-24 23:38:06</span>
+        <div class="tags">
+		        </div>
+    </div>
+    <div class="comment"></div>
+</div>
+
+<div id="footer">
+    <div class="powered_by">
+        <a target="_blank" href="http://xiao345.github.io">Proudly Powered By Austin</a>
+    </div>
+</div>
+<script type="text/javascript">
+$(function () {
+	$("pre").addClass("prettyprint linenums");
+	prettyPrint();
+	$.each($('a'), function(i,item){
+		if($('img', item).length >0) {
+			item.className = 'fancybox';
+		}
+	});
+	$(".fancybox").fancybox();
+})
+</script>
+</body>
+</html>
